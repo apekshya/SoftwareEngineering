@@ -1,0 +1,55 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  animation: App-logo-spin infinite 20s linear;
+  height: 20vmin;
+  pointer-events: none;
+}
+
+.App-body {
+  background-color: #282c34;
+  min-height: 60vh;
+  padding: 1em 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* all buttons in the App component should be styled like this */
+.App button {
+  background-color: #ff625a;
+  border: 1px solid #a34641;
+  color: #fff;
+  box-shadow: 0 0 4px 0 rgba(255, 109, 109, 0.5);
+  font-size: calc(10px + 2vmin);
+  margin-top: 20px;
+  width: 150px;
+}
+
+/* when clicked, what should change? */
+.App button:active {
+  background-color: #b3332d;
+}
+
+.App button:active,
+.App button:focus {
+  outline: 0;
+}

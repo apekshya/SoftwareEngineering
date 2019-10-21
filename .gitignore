@@ -1,0 +1,18 @@
+# ignore the node dependecies
+node_modules/
+
+# in case you use Webstorm, ignore these files
+.idea
+cmake-build-*/
+
+# for VSCode, ignore these
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+
+# in case you have a Mac, ignore these
+.DS_Store
+
+
