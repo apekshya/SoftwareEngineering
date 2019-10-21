@@ -51,7 +51,7 @@ const authMiddleware = async (req, res, next) => {
 
 // start listening on the port
 app.listen(PORT, () =>
-  console.log("welcome to senior capstone app on port: " + PORT)
+  console.log("welcome to software engineering app on port: " + PORT)
 );
 
 /**
