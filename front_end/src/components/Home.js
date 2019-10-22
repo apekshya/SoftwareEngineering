@@ -21,7 +21,7 @@ const Home = () => {
 
       {/* if we are logged in, show this text */}
       {isAuthenticated && (
-        <span>Welcome to Software Engineering Our-Space Chat App </span>
+        <span>Welcome to Our-Space Chat App for Software Engineering</span>
       )}
     </div>
   );
