@@ -20,7 +20,7 @@ const jwksClient = require('jwks-rsa-promisified');
 
 /**
  * verifyAuth
- * expected input: authoriation header:    Authorization: bearer <jwt token>
+ * expected input: authorization header:    Authorization: bearer <jwt token>
  * returns <Promise> String - "forbidden" || "authorized"
  */
 const verifyAuth = async header => {
@@ -34,13 +34,13 @@ const verifyAuth = async header => {
 
   try {
     const data = await axios.get(
-      'https://myconferencehub.auth0.com/.well-known/jwks.json'
+      'https://au-cpsc4430.auth0.com/.well-known/jwks.json'
     );
     const kid = data.data.keys[0].kid; //the kid is required to verify the signature
 
     const client = jwksClient({
       strictSsl: true, // Default value
-      jwksUri: 'https://myconferencehub.auth0.com/.well-known/jwks.json',
+      jwksUri: 'https://au-cpsc4430.auth0.com/.well-known/jwks.json',
       requestHeaders: {}, // Optional
       requestAgentOptions: {} // Optional
     });

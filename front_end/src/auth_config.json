@@ -1,5 +1,5 @@
 {
-  "domain": "myconferencehub.auth0.com",
-  "clientId": "275AeWl4N2Gd4rPi1H6kklM1D1oLEBxb",
-  "audience": "https://cel.anderson.edu/myconferencehub"
+  "domain": "au-cpsc4430.auth0.com",
+  "clientId": "WWEozG4KiyKFHtutglKwB6rk7e1gy40A",
+  "audience": "https://cel.anderson.edu/cpsc4430"
 }
