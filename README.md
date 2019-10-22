@@ -3,7 +3,7 @@ Software Engineering Project Web App Team:
 
 Apekshya Koirala
 
-Connar Page
+Conner Page
 
 James Robinson
 
