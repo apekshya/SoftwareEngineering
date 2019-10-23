@@ -14,14 +14,14 @@ const Home = () => {
   // this is the JSX (HTML) returned to be displayed on the page by App.js
   return (
     <div className="Home">
-      <h2>Home</h2>
+      <h2>Home Page</h2>
 
       {/* if we are not logged in, display this text */}
       {isAuthenticated === false && <span>Please login to continue.</span>}
 
       {/* if we are logged in, show this text */}
       {isAuthenticated && (
-        <span>Welcome to The Proof of Concept Auth App </span>
+        <span>Welcome to Software Engineering Chat App</span>
       )}
     </div>
   );
