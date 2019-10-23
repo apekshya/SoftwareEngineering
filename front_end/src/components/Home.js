@@ -1,9 +1,9 @@
 // src/components/Home.js
 
 // standard imports
-import React from 'react';
-import { useAuth0 } from '../react-auth0-wrapper';
-import './Home.css';
+import React from "react";
+import { useAuth0 } from "../react-auth0-wrapper";
+import "./Home.css";
 
 // the Home component
 const Home = () => {
@@ -20,9 +20,11 @@ const Home = () => {
       {isAuthenticated === false && <span>Please login to continue.</span>}
 
       {/* if we are logged in, show this text */}
-      {isAuthenticated && (
-        <span>Welcome to Software Engineering Chat App</span>
-      )}
+      {isAuthenticated && <span>Welcome to Software Engineering Chat App</span>}
+      <p>
+        This is a fun chat app for university students to communicate with other
+        students on campus that are in their same location.
+      </p>
     </div>
   );
 };
