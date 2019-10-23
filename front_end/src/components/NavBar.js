@@ -47,7 +47,8 @@ const NavBar = () => {
        */}
       {isAuthenticated && (
         <span>
-          <Link to="/profile">Profile</Link>
+          <Link to="/profile">Profile </Link>
+          <Link to="/msgboard">Message Board</Link>&nbsp;
         </span>
       )}
     </div>
