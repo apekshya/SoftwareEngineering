@@ -15,7 +15,6 @@ const Home = () => {
   return (
     <div className="Home">
       <h2>Home Page</h2>
-      <h3>Please login</h3>
 
       {/* if we are not logged in, display this text */}
       {isAuthenticated === false && <span>Please login to continue.</span>}
