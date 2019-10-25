@@ -1,9 +1,9 @@
 // src/components/Home.js
 
 // standard imports
-import React from "react";
-import { useAuth0 } from "../react-auth0-wrapper";
-import "./Home.css";
+import React from 'react';
+import { useAuth0 } from '../react-auth0-wrapper';
+import './Home.css';
 
 // the Home component
 const Home = () => {
@@ -23,7 +23,8 @@ const Home = () => {
       {isAuthenticated && <span>Welcome to Software Engineering Chat App</span>}
       <p>
         This is a fun chat app for university students to communicate with other
-        students on campus that are in their same location.
+        students on campus that are in their same location. To login you need to
+        use your university email.
       </p>
     </div>
   );
