@@ -20,9 +20,12 @@ const Home = () => {
       {isAuthenticated === false && <span>Please login to continue.</span>}
 
       {/* if we are logged in, show this text */}
-      {isAuthenticated && (
-        <span>Welcome to Software Engineering Chat App</span>
-      )}
+      {isAuthenticated && <span>Welcome to Software Engineering Chat App</span>}
+      <p>
+        This is a fun chat app for university students to communicate with other
+        students on campus that are in their same location. To login you need to
+        use your university email.
+      </p>
     </div>
   );
 };
