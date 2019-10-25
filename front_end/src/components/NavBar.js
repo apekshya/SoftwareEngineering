@@ -18,28 +18,15 @@ const NavBar = () => {
   // TODO:  This is ugly, definitely need to improve it
   return (
     <div className="NavBar">
-      {/* If not logged in, provide a Log in button
-       * loginWithRedirect is provided by src/react-auth0-wrapper.js
-       */}
-      {!isAuthenticated && (
-        <button onClick={() => loginWithRedirect({})}>Log in</button>
-      )}
 
-      {/* If already logged in, provide a Log out button
-       * logout is provided by src/react-auth0-wrapper.js
-       */}
-      {isAuthenticated && <button onClick={() => logout()}>Log out</button>}
-
-      {/* Always provide the LoremIpsum and Home links, whether or not any one is logged in */}
       {
         <span>
-          <code>Anderson University | Proof of Concept Application</code>
+          <code>CPSC 4430 App</code>
         </span>
       }
       {
         <span>
           <Link to="/">Home</Link>&nbsp;
-          <Link to="/loremipsum">Lorem Ipsum</Link>&nbsp;
         </span>
       }
 
@@ -50,6 +37,21 @@ const NavBar = () => {
           <Link to="/profile">Profile</Link>
         </span>
       )}
+
+      {/* If not logged in, provide a Log in button
+       * loginWithRedirect is provided by src/react-auth0-wrapper.js
+       */}
+      <span>
+      {!isAuthenticated && (
+          <button className="loginout" onClick={() => loginWithRedirect({})}>Log in</button>
+      )}
+
+        {/* If already logged in, provide a Log out button
+       * logout is provided by src/react-auth0-wrapper.js
+       */}
+        {isAuthenticated && <button className="loginout" onClick={() => logout()}>Log out</button>}
+       </span>
+      {/* Always provide the Home link, whether or not any one is logged in */}
     </div>
   );
 };

@@ -1,10 +1,17 @@
 .NavBar {
   background-color: #282c34;
-  min-height: 15vh;
+  min-height: 2vh;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
   font-size: calc(10px + 2vmin);
   color: orange;
+  margin-top: 0px;
+}
+
+.loginout{
+  justify-content: right;
+  float:right;
+  padding: 4px 2px;
 }

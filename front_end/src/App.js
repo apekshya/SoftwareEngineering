@@ -14,7 +14,6 @@ import './App.css';
 // bring in other components
 import NavBar from './components/NavBar';
 import Home from './components/Home';
-import LoremIpsum from './components/LoremIpsum';
 import Profile from './components/Profile';
 import Footer from './components/Footer';
 import ExternalAPI from './components/ExternalAPI';
@@ -57,7 +56,6 @@ const App = () => {
         <Switch>
           {/* "Routes" can be accessed whether or not user is logged in */}
           <Route path="/" exact component={Home} />
-          <Route path="/loremipsum" component={LoremIpsum} />
           {/* PrivateRoutes can only be accessed when logged in,
            * this functionality is provided in the file src/PrivateRoute.js */}
           <PrivateRoute path="/profile" component={Profile} />
