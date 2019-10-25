@@ -1,4 +1,4 @@
-# software engineering
+# Software Engineering
 Software Engineering Project Web App Team:
 
 Apekshya Koirala
@@ -11,7 +11,7 @@ Matt Gordon
 
 Matthew Milford
 
-Michael Hudson]
+Michael Hudson
 
 Samita Neupane
 
