@@ -20,6 +20,7 @@ import Footer from './components/Footer';
 import ExternalAPI from './components/ExternalAPI';
 import ShowDatabase from './components/ShowDatabase';
 import msgBoard from './components/msgBoard';
+import Main from "./components/Main";
 
 // This is the App component, referenced from index.js
 const App = () => {
@@ -63,6 +64,7 @@ const App = () => {
            * this functionality is provided in the file src/PrivateRoute.js */}
           <PrivateRoute path="/profile" component={Profile} />
 		  <PrivateRoute path="/msgBoard" component={msgBoard} />
+          <PrivateRoute path="/Main" component={Main} />
         </Switch>
 
         {/* this area is after the body provided in the Switch,

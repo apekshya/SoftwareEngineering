@@ -49,6 +49,7 @@ const NavBar = () => {
         <span>
           <Link to="/profile">Profile </Link>
           <Link to="/msgboard">Message Board</Link>&nbsp;
+          <Link to="/Main">Main</Link>
         </span>
       )}
     </div>
