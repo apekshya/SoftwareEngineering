@@ -12,6 +12,7 @@ class Chat extends Component{
         }
     }
 
+//TODO: review warning of syncMessages if needed
     componentDidMount() {
         this.syncMessages()
     }
@@ -22,12 +23,14 @@ class Chat extends Component{
         }
       }
 
+//TODO: removeBinding causes an error.
+//TODO: syncState currently does not exist
     syncMessages = () => {
         if (this.messagesRef){
             localStorage.removeBinding(this.messagesRef)
         }
 
-        this.messagesRef = localStorage.syncState(
+        this.messagesRef = localStorage.setItem(
             `messages/${this.props.room.name}`,
             {
               context: this,

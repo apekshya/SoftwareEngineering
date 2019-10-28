@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import Sidebar from './Sidebar'
 import Chat from './Chat'
 import RoomForm from './RoomForm';
+import Profile from './Profile';
 
 class Main extends Component{
     state = {
@@ -29,8 +30,9 @@ class Main extends Component{
         }
       }
 
+//TODO: find error in syncState / code syncState / remove
       componentDidMount() {
-        this.roomsRef = localStorage.syncState(
+        this.roomsRef = localStorage.setItem(
           'rooms',
           {
             context: this,

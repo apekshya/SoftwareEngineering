@@ -4,18 +4,25 @@
 import React from "react";
 import "./msgBoard.css";
 
+function addMessage () {
+	let msg = document.getElementById("messages").value = "New Message";  
+	alert(msg);
+}
+
 const msgBoard = () => {  
   return (
     <div className="msgBoard">
 	  <form>
-  <label>
-    Chat:
-    <input type="text"  />
-  </label>
-  <input type="submit" value="Submit" />
-</form>
-<p>Messages go here</p>
-	  {/* document.getElementById("msgs").innerHTML = "New Message"; */}
+		<label>
+			Chat:
+			<input 
+			  autofocus
+			  required
+			  type="text"   />
+		</label>
+		<input type="submit" value="Submit" onclick="addMessage()"/>
+	  </form>
+	  <p id="messages">Messages go here</p>
     </div>
   );
 };
