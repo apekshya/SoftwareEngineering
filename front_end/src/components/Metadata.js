@@ -6,9 +6,11 @@ const Metadata = ({ message }) => {
       className="Metadata"
       style={styles.metadata}
     >
+	{/*
       <div style={styles.user}>
         {message.user.displayName}
       </div>
+	*/}
       <div style={styles.time}>
         1:10 PM
       </div>

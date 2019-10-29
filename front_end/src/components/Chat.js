@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import ChatHeader from './ChatHeader'
 import MessageList from './MessageList'
 import MessageForm from './MessageForm'
+import Profile from './Profile';
 
 class Chat extends Component{
     constructor(){
@@ -40,16 +41,18 @@ class Chat extends Component{
         )
     }
 
+	/*
     componentWillUnmount() {
         localStorage.removeBinding(this.messagesRef)
       }
+	*/
 
     addMessage = (body) => {
         const messages = [...this.state.messages]
         const user = this.props.user
 
         messages.push({
-            id: `${user.uid}-${Date.now()}`,
+            id: `James`,
             user,
             body,
         })

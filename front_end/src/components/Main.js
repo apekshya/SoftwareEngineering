@@ -47,10 +47,12 @@ class Main extends Component{
         )
       }
     
+	/*
     componentWillUnmount() {
         localStorage.removeBinding(this.roomsRef)
     }
-
+	*/
+	
     addRoom = room => {
         const rooms = {...this.state.rooms}
         rooms[room.name] = room
