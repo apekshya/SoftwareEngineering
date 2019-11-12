@@ -35,8 +35,8 @@
 
 /* all buttons in the App component should be styled like this */
 .App button {
-  background-color: #ff625a;
-  border: 1px solid #a34641;
+  background-color: purple;
+  border: 2px solid purple;
   color: #fff;
   box-shadow: 0 0 4px 0 rgba(255, 109, 109, 0.5);
   font-size: calc(10px + 2vmin);
@@ -46,7 +46,7 @@
 
 /* when clicked, what should change? */
 .App button:active {
-  background-color: #b3332d;
+  background-color: darkblue;
 }
 
 .App button:active,
