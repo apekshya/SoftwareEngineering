@@ -26,7 +26,7 @@ const NavBar = () => {
       }
       {
         <span>
-          <Link to="/Room">Home</Link>&nbsp;
+          <Link to="/">Home</Link>&nbsp;
         </span>
       }
 
@@ -34,7 +34,9 @@ const NavBar = () => {
        */}
       {isAuthenticated && (
         <span>
-          <Link to="/Room">Profile</Link>
+          <Link to="/Profile">Profile</Link>
+            <br/>
+            <Link to="/Room">ChatRoom</Link>
         </span>
       )}
 

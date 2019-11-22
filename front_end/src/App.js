@@ -13,12 +13,12 @@ import './App.css';
 
 // bring in other components
 import NavBar from './components/NavBar';
-import Home from './components/Room';
+import Home from './components/Home';
 import Profile from './components/Profile';
 import Footer from './components/Footer';
 import ExternalAPI from './components/ExternalAPI';
 import ShowDatabase from './components/ShowDatabase';
-import Room from "./components/Room";
+import Room from './components/Room';
 // This is the App component, referenced from index.js
 const App = () => {
   /* get information from Auth0, pulling in specifically the
@@ -59,6 +59,7 @@ const App = () => {
           {/* PrivateRoutes can only be accessed when logged in,
            * this functionality is provided in the file src/PrivateRoute.js */}
           <PrivateRoute path="/profile" component={Profile} />
+          <PrivateRoute path="/Room" component={Room} />
         </Switch>
 
         {/* this area is after the body provided in the Switch,
