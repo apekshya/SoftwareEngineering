@@ -4,7 +4,7 @@
 import React from 'react';
 import { useAuth0 } from '../react-auth0-wrapper';
 import { Link } from 'react-router-dom';
-
+import Room from "./Room";
 // css for the NavBar component
 import './NavBar.css';
 
@@ -26,7 +26,7 @@ const NavBar = () => {
       }
       {
         <span>
-          <Link to="/">Home</Link>&nbsp;
+          <Link to="/Room">Home</Link>&nbsp;
         </span>
       }
 
@@ -34,7 +34,7 @@ const NavBar = () => {
        */}
       {isAuthenticated && (
         <span>
-          <Link to="/profile">Profile</Link>
+          <Link to="/Room">Profile</Link>
         </span>
       )}
 
